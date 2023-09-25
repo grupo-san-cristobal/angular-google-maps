@@ -1,5 +1,5 @@
 {
-  "name": "@gsc/agm-drawing",
+  "name": "@grupo-san-cristobal/agm-drawing",
   "version": "14.0.0",
   "description": "Angular Google Maps (AGM) extension for google maps drawing library",
   "author": "Feliks Khantsis",

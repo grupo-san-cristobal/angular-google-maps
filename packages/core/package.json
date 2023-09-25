@@ -1,5 +1,5 @@
 {
-  "name": "@gsc/agm-core",
+  "name": "@grupo-san-cristobal/agm-core",
   "version": "14.0.0",
   "description": "Angular components for Google Maps",
   "author": "Sebastian Holstein <info@sebastian-holstein.de>",
