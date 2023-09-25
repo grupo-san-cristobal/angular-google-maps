@@ -1,9 +1,10 @@
-# This is a fork from the original Angular google maps project
-From sebastian holstein, we have published the package under our organization since we needed support for most current Angular versions
+# This is a fork from the original Angular google maps project from sebastian holstein,
+
+We have published the package under our organization since we needed support for most current Angular versions.
 
 We will be maintaining this package in order to provide compatibility with newer Angular versions
 
-We are not planning into adding new features to this package, and we plan to get back to the original angular google maps as soon the maintaninence is restablished on the original package
+We are not planning on adding new features to this package, and we plan to get back to the original angular google maps as soon the maintenance is reestablished on the original package
 
 
 [![AGM - Angular Google Maps](assets/images/angular-google-maps-logo.png)](https://angular-maps.com/)
@@ -25,13 +26,23 @@ Angular components for Google Maps. (Previously known as angular2-google-maps)
 ## Packages
 
 This project is a mono repo and hosts multiple packages:
+original Packages
 
-| Package                  | Downloads                                                                                                                                         |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| @agm/core                | [![@agm/core](https://img.shields.io/npm/dm/@agm/core.svg)](https://www.npmjs.com/package/@agm/core)                                              |
-| @agm/snazzy-info-window  | [![@agm/snazzy-info-window](https://img.shields.io/npm/dm/@agm/snazzy-info-window.svg)](https://www.npmjs.com/package/@agm/snazzy-info-window)    |
-| @agm/markerclusterer | [![@agm/markerclusterer](https://img.shields.io/npm/dm/@agm/markerclusterer.svg)](https://www.npmjs.com/package/@agm/markerclusterer) |
-| @agm/drawing | [![@agm/drawing](https://img.shields.io/npm/dm/@agm/drawing.svg)](https://www.npmjs.com/package/@agm/drawing) |
+| Package                 | Downloads                                                                                                                                         |
+|-------------------------| ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| @agm/core               | [![@agm/core](https://img.shields.io/npm/dm/@agm/core.svg)](https://www.npmjs.com/package/@agm/core)                                              |
+| @agm/snazzy-info-window | [![@agm/snazzy-info-window](https://img.shields.io/npm/dm/@agm/snazzy-info-window.svg)](https://www.npmjs.com/package/@agm/snazzy-info-window)    |
+| @agm/markerclusterer    | [![@agm/markerclusterer](https://img.shields.io/npm/dm/@agm/markerclusterer.svg)](https://www.npmjs.com/package/@agm/markerclusterer) |
+| @agm/drawing            | [![@agm/drawing](https://img.shields.io/npm/dm/@agm/drawing.svg)](https://www.npmjs.com/package/@agm/drawing) |
+
+Forked Packages
+
+| Package                 | Downloads                                                                                                                                         |
+|-------------------------| ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| @gsc/agm-core               | [![@gsc/agm-core](https://img.shields.io/npm/dm/@gsc/agm-core.svg)](https://www.npmjs.com/package/@gsc/agm-core)                                              |
+| @gsc/agm-snazzy-info-window | [![@gsc/agm-snazzy-info-window](https://img.shields.io/npm/dm/@gsc/agm-snazzy-info-window.svg)](https://www.npmjs.com/package/@gsc/agm-snazzy-info-window)    |
+| @gsc/agm-markerclusterer    | [![@gsc/agm-markerclusterer](https://img.shields.io/npm/dm/@gsc/agm-markerclusterer.svg)](https://www.npmjs.com/package/@gsc/agm-markerclusterer) |
+| @gsc/agm-drawing            | [![@gsc/agm-drawing](https://img.shields.io/npm/dm/@gsc/agm-drawing.svg)](https://www.npmjs.com/package/@gsc/agm-drawing) |
 
 ---
 
@@ -47,7 +58,7 @@ If you just want to play with AGM and don't want to set up a full project, you c
 You can install the package with the following command:
 
 ```shell
-npm install @agm/core
+npm install @gsc/agm-core
 ```
 
 You should also checkout the [Getting started](https://angular-maps.com/guides/getting-started/) guide for further information.
