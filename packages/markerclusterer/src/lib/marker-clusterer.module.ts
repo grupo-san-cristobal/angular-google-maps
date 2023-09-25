@@ -1,4 +1,4 @@
-import { AgmCoreModule } from '@agm/core';
+import { AgmCoreModule } from '@gsc/agm-core';
 import { NgModule } from '@angular/core';
 import { AgmMarkerCluster } from './directives/marker-cluster';
 

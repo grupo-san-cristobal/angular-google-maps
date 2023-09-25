@@ -18,19 +18,19 @@
       "dom"
     ],
     "paths": {
-      "@agm/core": [
+      "@gsc/agm-core": [
         "dist/core/agm-core",
         "dist/core"
       ],
-      "@agm/markerclusterer": [
+      "@gsc/agm-markerclusterer": [
         "dist/markerclusterer/agm-markerclusterer",
         "dist/markerclusterer"
       ],
-      "@agm/snazzy-info-window": [
+      "@gsc/agm-snazzy-info-window": [
         "dist/snazzy-info-window/agm-snazzy-info-window",
         "dist/snazzy-info-window"
       ],
-      "@agm/drawing": [
+      "@gsc/agm-drawing": [
         "dist/drawing/drawing",
         "dist/drawing"
       ]

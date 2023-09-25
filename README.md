@@ -1,3 +1,11 @@
+# This is a fork from the original Angular google maps project
+From sebastian holstein, we have published the package under our organization since we needed support for most current Angular versions
+
+We will be maintaining this package in order to provide compatibility with newer Angular versions
+
+We are not planning into adding new features to this package, and we plan to get back to the original angular google maps as soon the maintaninence is restablished on the original package
+
+
 [![AGM - Angular Google Maps](assets/images/angular-google-maps-logo.png)](https://angular-maps.com/)
 
 # AGM - Angular Google Maps
