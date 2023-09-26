@@ -39,10 +39,10 @@ Forked Packages
 
 | Package                 | Downloads                                                                                                                                         |
 |-------------------------| ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| @gsc/agm-core               | [![@gsc/agm-core](https://img.shields.io/npm/dm/@gsc/agm-core.svg)](https://www.npmjs.com/package/@gsc/agm-core)                                              |
-| @gsc/agm-snazzy-info-window | [![@gsc/agm-snazzy-info-window](https://img.shields.io/npm/dm/@gsc/agm-snazzy-info-window.svg)](https://www.npmjs.com/package/@gsc/agm-snazzy-info-window)    |
-| @gsc/agm-markerclusterer    | [![@gsc/agm-markerclusterer](https://img.shields.io/npm/dm/@gsc/agm-markerclusterer.svg)](https://www.npmjs.com/package/@gsc/agm-markerclusterer) |
-| @gsc/agm-drawing            | [![@gsc/agm-drawing](https://img.shields.io/npm/dm/@gsc/agm-drawing.svg)](https://www.npmjs.com/package/@gsc/agm-drawing) |
+| @grupo-san-cristobal/agm-core               | [![@grupo-san-cristobal/agm-core](https://img.shields.io/npm/dm/@grupo-san-cristobal/agm-core.svg)](https://www.npmjs.com/package/@grupo-san-cristobal/agm-core)                                              |
+| @grupo-san-cristobal/agm-snazzy-info-window | [![@grupo-san-cristobal/agm-snazzy-info-window](https://img.shields.io/npm/dm/@grupo-san-cristobal/agm-snazzy-info-window.svg)](https://www.npmjs.com/package/@grupo-san-cristobal/agm-snazzy-info-window)    |
+| @grupo-san-cristobal/agm-markerclusterer    | [![@grupo-san-cristobal/agm-markerclusterer](https://img.shields.io/npm/dm/@grupo-san-cristobal/agm-markerclusterer.svg)](https://www.npmjs.com/package/@grupo-san-cristobal/agm-markerclusterer) |
+| @grupo-san-cristobal/agm-drawing            | [![@grupo-san-cristobal/agm-drawing](https://img.shields.io/npm/dm/@grupo-san-cristobal/agm-drawing.svg)](https://www.npmjs.com/package/@grupo-san-cristobal/agm-drawing) |
 
 ---
 
@@ -58,7 +58,7 @@ If you just want to play with AGM and don't want to set up a full project, you c
 You can install the package with the following command:
 
 ```shell
-npm install @gsc/agm-core
+npm install @grupo-san-cristobal/agm-core
 ```
 
 You should also checkout the [Getting started](https://angular-maps.com/guides/getting-started/) guide for further information.

@@ -1,4 +1,4 @@
-import { AgmMarker, GoogleMapsAPIWrapper, MarkerManager } from '@gsc/agm-core';
+import { AgmMarker, GoogleMapsAPIWrapper, MarkerManager } from '@grupo-san-cristobal/agm-core';
 import { Injectable, NgZone } from '@angular/core';
 import { MarkerClustererOptions } from '@google/markerclustererplus';
 import MarkerClusterer from '@google/markerclustererplus';
