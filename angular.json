@@ -10,7 +10,7 @@
       "projectType": "library",
       "root": "packages/core",
       "sourceRoot": "packages/core/src",
-      "prefix": "agm",
+      "prefix": "gsc",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -30,7 +30,7 @@
       "projectType": "library",
       "root": "packages/markerclusterer",
       "sourceRoot": "packages/markerclusterer/src",
-      "prefix": "agm",
+      "prefix": "gsc",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -50,7 +50,7 @@
       "projectType": "library",
       "root": "packages/snazzy-info-window",
       "sourceRoot": "packages/snazzy-info-window/src",
-      "prefix": "agm",
+      "prefix": "gsc",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -70,7 +70,7 @@
       "projectType": "library",
       "root": "packages/drawing",
       "sourceRoot": "packages/drawing/src",
-      "prefix": "agm",
+      "prefix": "gsc",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",

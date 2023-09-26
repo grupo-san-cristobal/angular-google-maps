@@ -18,19 +18,19 @@
       "dom"
     ],
     "paths": {
-      "@agm/core": [
+      "@grupo-san-cristobal/agm-core": [
         "dist/core/agm-core",
         "dist/core"
       ],
-      "@agm/markerclusterer": [
+      "@grupo-san-cristobal/agm-markerclusterer": [
         "dist/markerclusterer/agm-markerclusterer",
         "dist/markerclusterer"
       ],
-      "@agm/snazzy-info-window": [
+      "@grupo-san-cristobal/agm-snazzy-info-window": [
         "dist/snazzy-info-window/agm-snazzy-info-window",
         "dist/snazzy-info-window"
       ],
-      "@agm/drawing": [
+      "@grupo-san-cristobal/agm-drawing": [
         "dist/drawing/drawing",
         "dist/drawing"
       ]

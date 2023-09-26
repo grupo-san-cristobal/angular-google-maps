@@ -1,10 +1,10 @@
 {
   "private": true,
-  "version": "3.0.0-beta.1",
+  "version": "14.0.1",
   "description": "Angular components for Google Maps",
   "repository": {
     "type": "git",
-    "url": "https://github.com/SebastianM/angular-google-maps.git"
+    "url": "https://github.com/grupo-san-cristobal/angular-google-maps.git"
   },
   "keywords": [
     "angular",
@@ -18,7 +18,7 @@
     "packages/*"
   ],
   "scripts": {
-    "clean": "rimraf dist node_modules/@agm",
+    "clean": "rimraf dist node_modules/@agm node_modules/@gsc",
     "prebuild": "yarn clean",
     "build": "ng build core && ng build markerclusterer && ng build snazzy-info-window && ng build drawing",
     "build:prod": "ng build core --configuration production && ng build markerclusterer --configuration production && ng build snazzy-info-window --configuration production && ng build drawing --configuration production",
@@ -30,15 +30,15 @@
     "docs:hugo": "cd docs && hugo",
     "docs:injectga": "node scripts/inject-google-analytics.js",
     "docs": "yarn docs:hugo && yarn apidocs:core && yarn apidocs:snazzy && yarn apidocs:markerclusterer && yarn apidocs:drawing",
-    "apidocs:core": "compodoc -p packages/core/tsconfig.lib.json --name @agm/core --output docs/public/api-docs/agm-core/  --hideGenerator --disableCoverage",
-    "apidocs:snazzy": "compodoc -p packages/snazzy-info-window/tsconfig.lib.json --name @agm/snazzy-info-window  --output docs/public/api-docs/agm-snazzy-info-window/ --hideGenerator --disableCoverage",
-    "apidocs:markerclusterer": "compodoc -p packages/markerclusterer/tsconfig.lib.json --name @agm/markerclusterer  --output docs/public/api-docs/markerclusterer/ --hideGenerator --disableCoverage",
-    "apidocs:drawing": "compodoc -p packages/drawing/tsconfig.lib.json --name @agm/drawing  --output docs/public/api-docs/drawing/ --hideGenerator --disableCoverage"
+    "apidocs:core": "compodoc -p packages/core/tsconfig.lib.json --name @grupo-san-cristobal/agm-core --output docs/public/api-docs/agm-core/  --hideGenerator --disableCoverage",
+    "apidocs:snazzy": "compodoc -p packages/snazzy-info-window/tsconfig.lib.json --name @grupo-san-cristobal/agm-snazzy-info-window  --output docs/public/api-docs/agm-snazzy-info-window/ --hideGenerator --disableCoverage",
+    "apidocs:markerclusterer": "compodoc -p packages/markerclusterer/tsconfig.lib.json --name @grupo-san-cristobal/agm-markerclusterer  --output docs/public/api-docs/markerclusterer/ --hideGenerator --disableCoverage",
+    "apidocs:drawing": "compodoc -p packages/drawing/tsconfig.lib.json --name @grupo-san-cristobal/agm-drawing  --output docs/public/api-docs/drawing/ --hideGenerator --disableCoverage"
   },
   "author": "Sebastian Holstein <info@sebastian-holstein.de>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SebastianM/angular-google-maps/issues"
+    "url": "https://github.com/grupo-san-cristobal/angular-google-maps/issues"
   },
   "homepage": "https://angular-maps.com",
   "dependencies": {
