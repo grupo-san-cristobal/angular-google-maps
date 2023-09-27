@@ -15,18 +15,21 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: yarn version apply --all
+      - run: npm version patch --workspaces=true --workspaces-update=false
+      - run: yarn
+      - run: yarn build:prod
       - name: 'Automated Version Bump'
         id: version-bump
-        uses: 'phips28/gh-action-bump-version@master'
+      - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit-message: 'version bump to {{version}} [skip ci]'
-          target-branch: 'develop'
-        env:
-          PACKAGEJSON_DIR: './'
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }}
-      - run: yarn 
-      - run: yarn build:prod
+          # Optional. Commit message for the created commit.
+          # Defaults to "Apply automatic changes"
+          commit_message: 'version bump [skip ci]'
+
+          # Optional. Local and remote branch name where commit is going to be pushed
+          #  to. Defaults to the current branch.
+          #  You might need to set `create_branch: true` if the branch does not exist.
+          branch: develop
 
   publish-npm:
     needs: build
