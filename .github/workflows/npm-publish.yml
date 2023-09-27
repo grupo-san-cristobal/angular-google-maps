@@ -1,14 +1,17 @@
 # This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
 # For more information see: https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages
 
-name: Node.js Packages
+name: Publish packages
 
 on:
   release:
     types: [created]
 
+env:
+  NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+
 jobs:
-  build:
+  build-publish:
     runs-on: ubuntu-latest
     permissions:
       # Give the default GITHUB_TOKEN write permission to commit and push the
@@ -22,6 +25,10 @@ jobs:
       - run: npm version patch --workspaces=true --workspaces-update=false
       - run: yarn
       - run: yarn build:prod
+      - run: npm publish dist/core --access=public
+      - run: npm publish dist/drawing --access=public
+      - run: npm publish dist/markerclusterer --access=public
+      - run: npm publish dist/snazzy-info-window --access=public
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           # Optional. Commit message for the created commit.
@@ -32,19 +39,3 @@ jobs:
           #  to. Defaults to the current branch.
           #  You might need to set `create_branch: true` if the branch does not exist.
           branch: develop
-
-  publish-npm:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          registry-url: https://registry.npmjs.org/
-      - run: npm publish dist/core --access=public
-      - run: npm publish dist/drawing --access=public
-      - run: npm publish dist/markerclusterer --access=public
-      - run: npm publish dist/snazzy-info-window --access=public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
