@@ -18,8 +18,6 @@ jobs:
       - run: npm version patch --workspaces=true --workspaces-update=false
       - run: yarn
       - run: yarn build:prod
-      - name: 'Automated Version Bump'
-        id: version-bump
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           # Optional. Commit message for the created commit.
