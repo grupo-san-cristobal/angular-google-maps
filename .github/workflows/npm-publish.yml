@@ -8,7 +8,7 @@ on:
     types: [created]
 
 env:
-  NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 jobs:
   build-publish:
@@ -27,11 +27,7 @@ jobs:
       - run: yarn
       - run: yarn build:prod
       - run: npm publish ./dist/core --access=public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm publish ./dist/drawing --access=public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm publish ./dist/markerclusterer --access=public
       - run: npm publish ./dist/snazzy-info-window --access=public
       - uses: stefanzweifel/git-auto-commit-action@v4

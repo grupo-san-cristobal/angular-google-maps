@@ -1,6 +1,6 @@
 {
   "name": "@grupo-san-cristobal/agm-markerclusterer",
-  "version": "14.0.3",
+  "version": "14.0.4",
   "description": "Angular Google Maps (AGM) extension for markerclusterer support",
   "author": "Jens Fahnenbruck <jigfox@me.com>",
   "license": "MIT",
