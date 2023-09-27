@@ -42,7 +42,9 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: yarn
-      - run: npm publish --access public
+      - run: npm publish dist/core --access=public
+      - run: npm publish dist/drawing --access=public
+      - run: npm publish dist/markerclusterer --access=public
+      - run: npm publish dist/snazzy-info-window --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
