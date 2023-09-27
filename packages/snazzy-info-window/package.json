@@ -1,6 +1,6 @@
 {
   "name": "@grupo-san-cristobal/agm-snazzy-info-window",
-  "version": "14.0.5",
+  "version": "14.0.6",
   "description": "Angular Google Maps (AGM) package for Snazzy Info Window support",
   "author": "Sebastian Holstein <info@sebastian-holstein.de>",
   "license": "MIT",
