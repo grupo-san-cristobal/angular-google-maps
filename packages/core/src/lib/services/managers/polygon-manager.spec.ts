@@ -113,7 +113,7 @@ describe('PolygonManager', () => {
             if (expectationIndex === expectations.length) {
               done();
             }
-          }, fail /* shouldn't have errors */, fail /* shouldn't finish */);
+          } /* shouldn't finish */);
           paths.push(new MvcArrayMock());
           paths.push(new MvcArrayMock());
         });
@@ -140,7 +140,7 @@ describe('PolygonManager', () => {
             if (expectationIndex === expectations.length) {
               done();
             }
-          }, fail /* shouldn't have errors */, fail /* shouldn't finish */);
+          });
           paths.pop();
           paths.removeAt(0);
         });
@@ -166,7 +166,7 @@ describe('PolygonManager', () => {
             if (expectationIndex === expectations.length) {
               done();
             }
-          }, fail /* shouldn't have errors */, fail /* shouldn't finish */);
+          });
           const firstMvcArray = new MvcArrayMock<google.maps.LatLng>();
           firstMvcArray.push(initLatLng);
           firstMvcArray.push(initLatLng);
@@ -196,7 +196,7 @@ describe('PolygonManager', () => {
             if (expectationIndex === expectations.length) {
               done();
             }
-          }, fail /* shouldn't have errors */, fail /* shouldn't finish */);
+          });
           paths.getAt(0).push(initLatLng);
           paths.getAt(0).push(initLatLng);
         });
@@ -223,7 +223,7 @@ describe('PolygonManager', () => {
             if (expectationIndex === expectations.length) {
               done();
             }
-          }, fail /* shouldn't have errors */, fail /* shouldn't finish */);
+          });
           paths.getAt(0).pop();
           paths.getAt(0).removeAt(0);
         });
@@ -249,7 +249,7 @@ describe('PolygonManager', () => {
             if (expectationIndex === expectations.length) {
               done();
             }
-          }, fail /* shouldn't have errors */, fail /* shouldn't finish */);
+          });
           paths.push(new MvcArrayMock<google.maps.LatLng>());
           paths.getAt(1).push(initLatLng);
         });
@@ -270,7 +270,7 @@ describe('PolygonManager', () => {
               eventName: 'removed_at',
               ...expectations[expectationIndex++],
             });
-          }, fail /* shouldn't have errors */, fail /* shouldn't finish */);
+          });
           const removedPath = paths.pop();
           removedPath.pop();
           done();
