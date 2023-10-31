@@ -46,6 +46,16 @@ Forked Packages
 
 ---
 
+## Versions
+
+Our convention is that the major number of the version of the package corresponds with the Angular version so
+
+v14.x.x is recomended for Angular 14
+v15.x.x is recomended for Angular 15
+and so on
+
+--
+
 ## Playing with AGM (Angular Google Maps)
 
 If you just want to play with AGM and don't want to set up a full project, you can use the following Plunker. It has all the dependencies to play with Angular, Typescript and of course `AGM`:
