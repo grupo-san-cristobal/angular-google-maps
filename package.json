@@ -1,6 +1,6 @@
 {
   "private": true,
-  "version": "14.0.1",
+  "version": "15.0.1-alpha",
   "description": "Angular components for Google Maps",
   "repository": {
     "type": "git",
