@@ -1,10 +1,10 @@
 # This is a fork from the original Angular google maps project from sebastian holstein,
 
-We have published the package under our organization since we needed support for most current Angular versions.
+We have published the package under our organization since we needed support for Angular 14 and later versions.
 
 We will be maintaining this package in order to provide compatibility with newer Angular versions
 
-We are not planning on adding new features to this package, and we plan to get back to the original angular google maps as soon the maintenance is reestablished on the original package
+We are not planning on adding new features to this package, nor changes on the API, and we plan to get back to the original angular google maps as soon the maintenance is reestablished on the original package.
 
 
 [![AGM - Angular Google Maps](assets/images/angular-google-maps-logo.png)](https://angular-maps.com/)
@@ -15,7 +15,7 @@ Angular components for Google Maps. (Previously known as angular2-google-maps)
 
 ---
 
-[Website](https://angular-maps.com/) | [Demo](https://stackblitz.com/edit/angular-google-maps-demo) | [Twitter](https://twitter.com/Sebholstein) | [Chat](https://discord.gg/XAr2ACE) | [API Documentation](https://angular-maps.com/api-docs/)
+[Website](https://angular-maps.com/) | [Demo](https://angular-google-maps-ng15.stackblitz.io) | [Twitter](https://twitter.com/Sebholstein) | [Chat](https://discord.gg/XAr2ACE) | [API Documentation](https://angular-maps.com/api-docs/)
 
 ---
 
@@ -54,13 +54,15 @@ v14.x.x is recomended for Angular 14
 v15.x.x is recomended for Angular 15
 and so on
 
+For previous Angular versions use the original packages. 
+
 --
 
 ## Playing with AGM (Angular Google Maps)
 
 If you just want to play with AGM and don't want to set up a full project, you can use the following Plunker. It has all the dependencies to play with Angular, Typescript and of course `AGM`:
 
-[&raquo; Play with Angular Google Maps on Stackblitz](https://stackblitz.com/edit/angular-google-maps-demo)
+[&raquo; Play with Angular Google Maps on Stackblitz](https://stackblitz.com/edit/angular-google-maps-ng15?file=src%2Fapp%2Fapp.component.ts)
 
 ## Installation
 

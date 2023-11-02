@@ -1,6 +1,6 @@
 {
   "name": "@grupo-san-cristobal/agm-core",
-  "version": "15.0.2-alpha",
+  "version": "15.0.3",
   "description": "Angular components for Google Maps",
   "author": "Sebastian Holstein <info@sebastian-holstein.de>",
   "license": "MIT",
