@@ -1,7 +1,7 @@
 {
   "private": true,
   "version": "3.0.0-beta.1",
-  "description": "Angular components for Google Maps",
+  "description": "Angular components for Google Maps ng14",
   "repository": {
     "type": "git",
     "url": "https://github.com/SebastianM/angular-google-maps.git"
