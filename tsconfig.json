@@ -9,7 +9,7 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "ES2022",
+    "target": "es2020",
     "module": "es2020",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -37,7 +37,6 @@
     },
     "types": [
       "googlemaps"
-    ],
-    "useDefineForClassFields": false
+    ]
   }
 }
