@@ -20,7 +20,7 @@
     "snazzy-info-window"
   ],
   "peerDependencies": {
-    "@grupo-san-cristobal/agm-core": "14.0.0",
+    "@grupo-san-cristobal/agm-core": "15.0.5",
     "@angular/common": "^14.0.0",
     "@angular/core": "^14.0.0",
     "snazzy-info-window": "^1.1.0"
@@ -30,6 +30,6 @@
   },
   "devDependencies": {
     "@types/googlemaps": "3.39.8",
-    "@grupo-san-cristobal/agm-core": "14.0.0"
+    "@grupo-san-cristobal/agm-core": "15.0.5"
   }
 }
