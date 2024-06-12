@@ -1,6 +1,6 @@
 {
   "name": "@grupo-san-cristobal/agm-drawing",
-  "version": "16.0.0",
+  "version": "15.0.4",
   "description": "Angular Google Maps (AGM) extension for google maps drawing library",
   "author": "Feliks Khantsis",
   "license": "MIT",
