@@ -36,7 +36,8 @@
       ]
     },
     "types": [
-      "googlemaps"
+      "googlemaps",
+      "jest"
     ],
     "useDefineForClassFields": false
   }
