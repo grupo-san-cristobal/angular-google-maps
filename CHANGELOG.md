@@ -1,3 +1,7 @@
+# [16.0.0] (https://github.com/grupo-san-cristobal/angular-google-maps/) (2023-09-25)
+
+* Forked original version, published angular 16 compatible version
+
 # [3.0.0-beta.0](https://github.com/SebastianM/angular-google-maps/compare/1.1.0...3.0.0-beta.0) (2020-07-20)
 
 

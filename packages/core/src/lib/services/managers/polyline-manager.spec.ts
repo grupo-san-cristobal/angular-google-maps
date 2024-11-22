@@ -1,7 +1,6 @@
 import { NgZone, QueryList } from '@angular/core';
 import { fakeAsync, flushMicrotasks, inject, TestBed } from '@angular/core/testing';
 
-import { Subject } from 'rxjs';
 import { AgmPolyline } from '../../directives/polyline';
 import { AgmPolylineIcon } from '../../directives/polyline-icon';
 import { GoogleMapsAPIWrapper } from '../../services/google-maps-api-wrapper';
@@ -64,7 +63,6 @@ describe('PolylineManager', () => {
           (polylineManager: PolylineManager, apiWrapper: GoogleMapsAPIWrapper) => {
             const newPolyline = new AgmPolyline(polylineManager);
               newPolyline.iconSequences = Object.assign(new QueryList<AgmPolylineIcon>(), {
-                changes: new Subject<AgmPolylineIcon>(),
                 toArray: () => [{
                     fixedRotation: true,
                     offset: '1px',
@@ -139,12 +137,11 @@ describe('PolylineManager', () => {
           strokeWeight: 1.5,
           path: 'CIRCLE',
         }];
-        const iconChanges = new Subject<AgmPolyline>();
 
         const newPolyline = new AgmPolyline(polylineManager);
         newPolyline.iconSequences = Object.assign(
           new QueryList<AgmPolylineIcon>(),
-          { changes: iconChanges, toArray: () => iconArray}) as QueryList<AgmPolylineIcon>;
+          { toArray: () => iconArray}) as QueryList<AgmPolylineIcon>;
 
         polylineManager.addPolyline(newPolyline);
         flushMicrotasks();
