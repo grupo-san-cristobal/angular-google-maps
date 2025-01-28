@@ -12,7 +12,8 @@ import { Subscription } from 'rxjs';
 import { RectangleManager } from '../services/managers/rectangle-manager';
 
 @Directive({
-  selector: 'agm-rectangle',
+    selector: 'agm-rectangle',
+    standalone: false
 })
 export class AgmRectangle implements OnInit, OnChanges, OnDestroy {
   /**

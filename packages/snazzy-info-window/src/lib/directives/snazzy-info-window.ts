@@ -4,9 +4,10 @@ import { AfterViewInit, Component, ContentChild, ElementRef, EventEmitter, Host,
 declare var require: any;
 
 @Component({
-  // tslint:disable-next-line:component-selector
-  selector: 'agm-snazzy-info-window',
-  template: '<div #outerWrapper><div #viewContainer></div></div><ng-content></ng-content>',
+    // tslint:disable-next-line:component-selector
+    selector: 'agm-snazzy-info-window',
+    template: '<div #outerWrapper><div #viewContainer></div></div><ng-content></ng-content>',
+    standalone: false
 })
 export class AgmSnazzyInfoWindow implements AfterViewInit, OnDestroy, OnChanges {
   /**

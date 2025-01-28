@@ -15,7 +15,10 @@ import { Directive, Input, OnInit } from '@angular/core';
  *    </agm-map>
  * ```
  */
-@Directive({selector: 'agm-polyline agm-icon-sequence'})
+@Directive({
+    selector: 'agm-polyline agm-icon-sequence',
+    standalone: false
+})
 export class AgmPolylineIcon implements OnInit{
 
   /**

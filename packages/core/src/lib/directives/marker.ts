@@ -30,10 +30,11 @@ let markerId = 0;
  * ```
  */
 @Directive({
-  selector: 'agm-marker',
-  providers: [
-    { provide: FitBoundsAccessor, useExisting: forwardRef(() => AgmMarker) },
-  ],
+    selector: 'agm-marker',
+    providers: [
+        { provide: FitBoundsAccessor, useExisting: forwardRef(() => AgmMarker) },
+    ],
+    standalone: false
 })
 export class AgmMarker implements OnDestroy, OnChanges, AfterContentInit, FitBoundsAccessor {
   /**

@@ -35,7 +35,8 @@ let polylineId = 0;
  * ```
  */
 @Directive({
-  selector: 'agm-polyline',
+    selector: 'agm-polyline',
+    standalone: false
 })
 export class AgmPolyline implements OnDestroy, OnChanges, AfterContentInit {
   /**

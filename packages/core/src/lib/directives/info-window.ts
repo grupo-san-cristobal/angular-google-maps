@@ -33,11 +33,12 @@ let infoWindowId = 0;
  * ```
  */
 @Component({
-  selector: 'agm-info-window',
-  template: `<div class='agm-info-window-content'>
+    selector: 'agm-info-window',
+    template: `<div class='agm-info-window-content'>
       <ng-content></ng-content>
     </div>
   `,
+    standalone: false
 })
 export class AgmInfoWindow implements OnDestroy, OnChanges, OnInit {
   /**

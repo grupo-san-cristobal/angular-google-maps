@@ -4,8 +4,9 @@ import { first } from 'rxjs/operators';
 import { AgmDrawingManager } from './drawing-manager';
 
 @Directive({
-  selector: 'agm-map[agmDrawingManager]',
-  exportAs: 'matDrawingManagerTrigger',
+    selector: 'agm-map[agmDrawingManager]',
+    exportAs: 'matDrawingManagerTrigger',
+    standalone: false
 })
 export class AgmDrawingManagerTrigger implements AfterViewInit, OnDestroy{
 

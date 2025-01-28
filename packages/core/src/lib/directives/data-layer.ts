@@ -196,7 +196,8 @@ let layerId = 0;
  * ```
  */
 @Directive({
-  selector: 'agm-data-layer',
+    selector: 'agm-data-layer',
+    standalone: false
 })
 export class AgmDataLayer implements OnInit, OnDestroy, OnChanges {
   private static _dataOptionsAttributes = ['style'];
