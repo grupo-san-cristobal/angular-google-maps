@@ -23,8 +23,9 @@ export abstract class AgmMapControl {
 }
 
 @Directive({
-  selector: 'agm-map agm-fullscreen-control',
-  providers: [{ provide: AgmMapControl, useExisting: AgmFullscreenControl }],
+    selector: 'agm-map agm-fullscreen-control',
+    providers: [{ provide: AgmMapControl, useExisting: AgmFullscreenControl }],
+    standalone: false
 })
 export class AgmFullscreenControl extends AgmMapControl {
   getOptions(): Partial<google.maps.MapOptions> {
@@ -37,8 +38,9 @@ export class AgmFullscreenControl extends AgmMapControl {
   }
 }
 @Directive({
-  selector: 'agm-map agm-map-type-control',
-  providers: [{ provide: AgmMapControl, useExisting: AgmMapTypeControl }],
+    selector: 'agm-map agm-map-type-control',
+    providers: [{ provide: AgmMapControl, useExisting: AgmMapTypeControl }],
+    standalone: false
 })
 export class AgmMapTypeControl extends AgmMapControl {
   @Input() mapTypeIds: (keyof typeof google.maps.MapTypeId)[];
@@ -57,8 +59,9 @@ export class AgmMapTypeControl extends AgmMapControl {
 }
 
 @Directive({
-  selector: 'agm-map agm-pan-control',
-  providers: [{ provide: AgmMapControl, useExisting: AgmPanControl }],
+    selector: 'agm-map agm-pan-control',
+    providers: [{ provide: AgmMapControl, useExisting: AgmPanControl }],
+    standalone: false
 })
 export class AgmPanControl extends AgmMapControl {
   getOptions(): Partial<google.maps.MapOptions> {
@@ -72,8 +75,9 @@ export class AgmPanControl extends AgmMapControl {
 }
 
 @Directive({
-  selector: 'agm-map agm-rotate-control',
-  providers: [{ provide: AgmMapControl, useExisting: AgmRotateControl }],
+    selector: 'agm-map agm-rotate-control',
+    providers: [{ provide: AgmMapControl, useExisting: AgmRotateControl }],
+    standalone: false
 })
 export class AgmRotateControl extends AgmMapControl {
   getOptions(): Partial<google.maps.MapOptions> {
@@ -87,8 +91,9 @@ export class AgmRotateControl extends AgmMapControl {
 }
 
 @Directive({
-  selector: 'agm-map agm-scale-control',
-  providers: [{ provide: AgmMapControl, useExisting: AgmScaleControl }],
+    selector: 'agm-map agm-scale-control',
+    providers: [{ provide: AgmMapControl, useExisting: AgmScaleControl }],
+    standalone: false
 })
 export class AgmScaleControl extends AgmMapControl{
   getOptions(): Partial<google.maps.MapOptions> {
@@ -99,8 +104,9 @@ export class AgmScaleControl extends AgmMapControl{
 }
 
 @Directive({
-  selector: 'agm-map agm-street-view-control',
-  providers: [{ provide: AgmMapControl, useExisting: AgmStreetViewControl }],
+    selector: 'agm-map agm-street-view-control',
+    providers: [{ provide: AgmMapControl, useExisting: AgmStreetViewControl }],
+    standalone: false
 })
 export class AgmStreetViewControl extends AgmMapControl {
   getOptions(): Partial<google.maps.MapOptions> {
@@ -114,8 +120,9 @@ export class AgmStreetViewControl extends AgmMapControl {
 }
 
 @Directive({
-  selector: 'agm-map agm-zoom-control',
-  providers: [{ provide: AgmMapControl, useExisting: AgmZoomControl }],
+    selector: 'agm-map agm-zoom-control',
+    providers: [{ provide: AgmMapControl, useExisting: AgmZoomControl }],
+    standalone: false
 })
 export class AgmZoomControl extends AgmMapControl{
   @Input() style: keyof typeof google.maps.ZoomControlStyle;
@@ -154,22 +161,22 @@ export class AgmZoomControl extends AgmMapControl{
  * ```
  */
 @Component({
-  selector: 'agm-map',
-  providers: [
-    CircleManager,
-    DataLayerManager,
-    DataLayerManager,
-    FitBoundsService,
-    GoogleMapsAPIWrapper,
-    InfoWindowManager,
-    KmlLayerManager,
-    LayerManager,
-    MarkerManager,
-    PolygonManager,
-    PolylineManager,
-    RectangleManager,
-  ],
-  styles: [`
+    selector: 'agm-map',
+    providers: [
+        CircleManager,
+        DataLayerManager,
+        DataLayerManager,
+        FitBoundsService,
+        GoogleMapsAPIWrapper,
+        InfoWindowManager,
+        KmlLayerManager,
+        LayerManager,
+        MarkerManager,
+        PolygonManager,
+        PolylineManager,
+        RectangleManager,
+    ],
+    styles: [`
     .agm-map-container-inner {
       width: inherit;
       height: inherit;
@@ -178,12 +185,13 @@ export class AgmZoomControl extends AgmMapControl{
       display:none;
     }
   `],
-  template: `
+    template: `
               <div class='agm-map-container-inner sebm-google-map-container-inner'></div>
               <div class='agm-map-content'>
                 <ng-content></ng-content>
               </div>
   `,
+    standalone: false
 })
 export class AgmMap implements OnChanges, AfterContentInit, OnDestroy {
   /**

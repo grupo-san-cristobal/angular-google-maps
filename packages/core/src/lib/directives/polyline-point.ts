@@ -8,10 +8,11 @@ import { FitBoundsAccessor, FitBoundsDetails } from '../services/fit-bounds';
  * AgmPolyline}
  */
 @Directive({
-  selector: 'agm-polyline-point',
-  providers: [
-    {provide: FitBoundsAccessor, useExisting: forwardRef(() => AgmPolylinePoint)},
-  ],
+    selector: 'agm-polyline-point',
+    providers: [
+        { provide: FitBoundsAccessor, useExisting: forwardRef(() => AgmPolylinePoint) },
+    ],
+    standalone: false
 })
 export class AgmPolylinePoint implements OnChanges, FitBoundsAccessor {
   /**

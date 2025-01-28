@@ -6,7 +6,8 @@ import { KmlLayerManager } from './../services/managers/kml-layer-manager';
 let layerId = 0;
 
 @Directive({
-  selector: 'agm-kml-layer',
+    selector: 'agm-kml-layer',
+    standalone: false
 })
 export class AgmKmlLayer implements OnInit, OnDestroy, OnChanges {
   private _addedToManager = false;

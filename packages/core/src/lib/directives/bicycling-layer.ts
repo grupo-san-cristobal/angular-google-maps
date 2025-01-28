@@ -9,6 +9,7 @@ let layerId = 0;
  * */
 @Directive({
     selector: 'agm-bicycling-layer',
+    standalone: false
 })
 export class AgmBicyclingLayer implements OnInit, OnDestroy{
     private _addedToManager = false;

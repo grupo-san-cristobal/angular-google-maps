@@ -54,7 +54,8 @@ import { MVCEvent } from '../utils/mvcarray-utils';
  * ```
  */
 @Directive({
-  selector: 'agm-polygon',
+    selector: 'agm-polygon',
+    standalone: false
 })
 export class AgmPolygon implements OnDestroy, OnChanges, AfterContentInit {
   /**

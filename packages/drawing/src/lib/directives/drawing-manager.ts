@@ -2,8 +2,9 @@ import { Directive, EventEmitter, Input, isDevMode, NgZone, OnChanges, OnDestroy
 import { fromEventPattern, Observable, Subscription } from 'rxjs';
 
 @Directive({
-  selector: 'agm-drawing-manager',
-  exportAs: 'agmDrawingManager',
+    selector: 'agm-drawing-manager',
+    exportAs: 'agmDrawingManager',
+    standalone: false
 })
 export class AgmDrawingManager implements OnChanges, OnDestroy{
 

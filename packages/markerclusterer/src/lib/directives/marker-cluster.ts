@@ -37,12 +37,13 @@ import { Component } from '@angular/core';
  */
 // tslint:enable: jsdoc-format
 @Directive({
-  selector: 'agm-marker-cluster',
-  providers: [
-    ClusterManager,
-    { provide: MarkerManager, useExisting: ClusterManager },
-    InfoWindowManager,
-  ],
+    selector: 'agm-marker-cluster',
+    providers: [
+        ClusterManager,
+        { provide: MarkerManager, useExisting: ClusterManager },
+        InfoWindowManager,
+    ],
+    standalone: false
 })
 export class AgmMarkerCluster implements OnDestroy, OnChanges, OnInit, MarkerClustererOptions {
   /**

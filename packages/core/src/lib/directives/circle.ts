@@ -4,7 +4,8 @@ import { Subscription } from 'rxjs';
 import { CircleManager } from '../services/managers/circle-manager';
 
 @Directive({
-  selector: 'agm-circle',
+    selector: 'agm-circle',
+    standalone: false
 })
 export class AgmCircle implements OnInit, OnChanges, OnDestroy {
   /**
