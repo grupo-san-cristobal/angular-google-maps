@@ -1,6 +1,6 @@
 {
   "name": "@grupo-san-cristobal/agm-markerclusterer",
-  "version": "17.0.3",
+  "version": "18.0.1",
   "description": "Angular Google Maps (AGM) extension for markerclusterer support",
   "author": "Jens Fahnenbruck <jigfox@me.com>",
   "license": "MIT",
@@ -20,16 +20,16 @@
     "agm"
   ],
   "peerDependencies": {
-    "@grupo-san-cristobal/agm-core": "^17.0.0",
-    "@angular/common": "^17.3.12",
-    "@angular/core": "^17.3.12",
+    "@grupo-san-cristobal/agm-core": "^17.0.0 || ^18.0.0",
+    "@angular/common": "^18.2.13",
+    "@angular/core": "^18.2.13",
     "@google/markerclustererplus": "^5.0.4"
   },
   "dependencies": {
     "tslib": "^2.0.0"
   },
   "devDependencies": {
-    "@grupo-san-cristobal/agm-core": "^17.0.0",
+    "@grupo-san-cristobal/agm-core": "^17.0.0 || ^18.0.0",
     "@google/markerclustererplus": "^5.0.4",
     "@types/googlemaps": "3.39.12",
     "@types/jest": "^28.1.8",
