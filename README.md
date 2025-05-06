@@ -6,6 +6,7 @@ We will be maintaining this package in order to provide compatibility with newer
 
 We are not planning on adding new features to this package, and we plan to get back to the original angular google maps as soon the maintenance is reestablished on the original package
 
+[StackBlitz Demo](https://stackblitz.com/edit/stackblitz-starters-tq9fxgov?file=src%2Fapp%2Fapp.component.html)
 
 [![AGM - Angular Google Maps](assets/images/angular-google-maps-logo.png)](https://angular-maps.com/)
 
