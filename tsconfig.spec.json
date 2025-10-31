@@ -2,6 +2,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "skipDefaultLibCheck": true,
     "esModuleInterop": true,
     "outDir": "./out-tsc/spec",
     "types": [
